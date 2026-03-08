@@ -1,0 +1,117 @@
+/* header Starts Here */
+
+/* Header Ends Here */
+
+/* ---------------------------- */
+
+/* Main Starts Here */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90%;
+    gap: 15px;
+}
+
+/* .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-evenly;
+} */
+
+/* .profile img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+} */
+
+ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    border: 1px solid var(--text-color);
+    width: 100%;
+}
+
+/* .info {
+    gap: 20px;
+} */
+
+/* .vertical-line {
+    border-left: 1px solid var(--text-color);
+    height: 50%;
+} */
+
+/* Main Ends Here */
+
+/* ---------------------------- */
+
+/* Footer Starts Here */
+
+/* Footer Ends Here */
+
+/* ---------------------------- */
+
+/* Media Starts Here */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100vh;
+        gap: 10px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* .profile img {
+        display: none;
+    } */
+
+    /* .vertical-line {
+        display: none;
+    } */
+
+    #icon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    /* .info ul li {
+        
+    } */
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {}
+
+/* Large devices (desktops, more than 1024px) */
+@media (min-width: 1025px) {}
+
+/* Media Ends Here */

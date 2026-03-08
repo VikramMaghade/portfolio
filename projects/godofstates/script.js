@@ -64,12 +64,6 @@ hamburger.addEventListener('click', () => {
 // Footer Starts Here
 
 document.addEventListener("DOMContentLoaded", function () {
-    const yearSpans = document.querySelectorAll(".year");
-    const currentYear = new Date().getFullYear();
-    yearSpans.forEach(span => span.textContent = currentYear);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     const yearSpan = document.getElementById("year");
     const currentYear = new Date().getFullYear();
     yearSpan.textContent = currentYear;
@@ -78,3 +72,47 @@ document.addEventListener("DOMContentLoaded", function () {
 // Footer Ends Here
 
 // ----------------------------
+
+// About Starts Here
+
+const headers = document.querySelectorAll('.resume h2');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+headers.forEach(header => observer.observe(header));
+
+// About Ends Here
+
+// ----------------------------
+
+// Contact Form Starts Here
+
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        result.innerHTML = "Thanks for reaching out!";
+        form.reset();
+    } else {
+        result.innerHTML = "Oops! Something went wrong.";
+    }
+});
+
+// Contact Form Ends Here

@@ -1,0 +1,30 @@
+/* header Starts Here */
+
+/* Header Ends Here */
+
+/* ---------------------------- */
+
+/* Main Starts Here */
+
+/* Main Ends Here */
+
+/* ---------------------------- */
+
+/* Footer Starts Here */
+
+/* Footer Ends Here */
+
+/* ---------------------------- */
+
+/* Media Starts Here */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {}
+
+/* Large devices (desktops, more than 1024px) */
+@media (min-width: 1025px) {}
+
+/* Media Ends Here */

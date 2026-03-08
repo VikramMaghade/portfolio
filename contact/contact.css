@@ -1,0 +1,207 @@
+/* header Starts Here */
+
+/* Header Ends Here */
+
+/* ---------------------------- */
+
+/* Main Starts Here */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 50vh;
+    width: 100%;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.social img {
+    width: 75px;
+    height: 75px;
+    transition: transform 0.3s ease;
+}
+
+.vertical-line {
+    border: 1px solid var(--text-color);
+    height: 50vh;
+    position: fixed;
+}
+
+.contactus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    height: 50vh;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+form {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+    gap: 10px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+input {
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+textarea {
+    border: 1px solid var(--text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20vw;
+}
+
+form h1 {
+    margin-top: 10px;
+}
+
+
+
+#result {
+    background-color: black;
+    color: white;
+}
+
+form .submit:hover {
+    background-color: white;
+    color: black;
+}
+
+form .submit {
+    border: 1px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main Ends Here */
+
+/* ---------------------------- */
+
+/* Footer Starts Here */
+
+/* Footer Ends Here */
+
+/* ---------------------------- */
+
+/* Media Starts Here */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    main {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+        /* gap: 5px; */
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        height: 50vh;
+        width: 100%;
+    }
+
+    .contactus {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1rem;
+        width: 100%;
+        height: 50vh;
+    }
+
+    form {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 75%;
+        gap: 10px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+
+    input {
+        /* border: 1px solid var(--text-color); */
+        /* background-color: var(--text-color); */
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    textarea {
+        /* border: 1px solid var(--text-color); */
+        /* background-color: var(--text-color); */
+        /* color: var(--text-color); */
+        border-radius: 10px;
+        padding: 10px;
+        width: 80vw;
+    }
+
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {}
+
+/* Large devices (desktops, more than 1024px) */
+@media (min-width: 1025px) {}
+
+/* Media Ends Here */

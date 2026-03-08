@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Vikram Maghade, showcasing resume, projects, samples, and contact info.">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/misc/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/misc/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/misc/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../contact/contact.css">
+    <title>Vikram Maghade | Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <h1>VM</h1>
+            </a>
+        </div>
+        <nav id="navbar" class="menu">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../resume/resume.html">RESUME</a></li>
+                <li><a href="../samples/samples.html">SAMPLES</a></li>
+                <li><a href="../projects/projects.html">PROJECTS</a></li>
+                <li><a href="../contact/contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button id="hamburger" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="theme">
+            <button id="theme-toggle">
+                <span id="theme-icon">🌞</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="social">
+            <h1>Social Media</h1>
+            <div class="img">
+                <a href="https://github.com/vikrammaghade" target="_blank"><img src="../assets/images/github.png"
+                        alt="Github Logo Image"></a>
+                <a href="https://wa.me/918898990994" target="_blank"><img src="../assets/images/whatsapp.png"
+                        alt="Whatsapp Logo Image"></a>
+            </div>
+        </div>
+        <div class="contactus">
+            <h1>Contact Me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST" id="form">
+
+                <input type="hidden" name="access_key" value="87d84c0d-fd83-427a-b4f1-de1b4acc86ae">
+
+                <input class="forminput" type="text" name="Name" placeholder="Your Name Here" required>
+                <input class="forminput" type="email" name="Email" placeholder="Your Email Here" required>
+                <textarea class="formtextarea" type="textarea" name="Message" placeholder="Your Message Here"
+                    required></textarea>
+                <input class="input" type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <button class="submit" type="submit">Let's Connect &#8594;</button>
+
+                <div id="result"></div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <P>&copy; <a href="https://vikrammaghadeportfolio.netlify.app/">Vikram Maghade</a> <b>|</b> Made With <abbr
+                title="Microsoft - Visual Studio Code"> <a href="https://code.visualstudio.com/">VS Code</a></abbr>
+            <b>|</b>
+            2025 - <span id="year"></span>
+        </P>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../contact/contact.js"></script>
+</body>
+
+</html>

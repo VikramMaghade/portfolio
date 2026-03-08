@@ -1,0 +1,51 @@
+/* header Starts Here */
+
+/* Header Ends Here */
+
+/* ---------------------------- */
+
+/* Main Starts Here */
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex: auto;
+}
+
+.card1,.card2,
+.card3, .card4,
+.card5 {
+    background-color: var(--bg--color);
+    height: 10vh;
+    width: 10vw;
+}
+
+/* Main Ends Here */
+
+/* ---------------------------- */
+
+/* Footer Starts Here */
+
+/* Footer Ends Here */
+
+/* ---------------------------- */
+
+/* Media Starts Here */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {}
+
+/* Large devices (desktops, more than 1024px) */
+@media (min-width: 1025px) {}
+
+/* Media Ends Here */

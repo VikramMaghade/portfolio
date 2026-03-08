@@ -1,0 +1,54 @@
+HTML (HyperText Markup Language) is the standard markup language used to create web pages.
+
+HTML is not a programming language—it's declarative, meaning it describes what content should be displayed, not how to do things. That's where CSS (styling) and JavaScript (interactivity) come in.
+
+What it does:
+
+    * Provides the structure and content of web pages
+    * Uses a system of tags (like <div>, <p>, <h1>) to organize and label different types of content
+    * Works with CSS for styling and JavaScript for interactivity
+
+Key concepts:
+
+    * Tags: Instructions wrapped in angle brackets that tell browsers how to display content
+    * Elements: A tag plus its content (e.g., <p>Hello World</p>)
+    * Semantic markup: Using meaningful tags that describe content purpose (e.g., <article>, <header>, <nav>)
+
+Common uses:
+
+    Creating text, headings, paragraphs, and lists
+    Embedding images, videos, and links
+    Building forms for user input
+    Creating the foundation for interactive web applications
+
+Basic structure:
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Title</title>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        <script src=""></script>
+    </body>
+
+    </html>
+
+Always save HTML file as index.html
